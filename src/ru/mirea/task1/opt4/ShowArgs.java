@@ -14,7 +14,6 @@ public class ShowArgs {
             arr[i] = sc.nextInt();
         }
 
-        // 1. Подсчет суммы через do-while
         int sumDoWhile = 0;
         int i = 0;
         if (n > 0) {
@@ -24,7 +23,6 @@ public class ShowArgs {
             } while (i < n);
         }
 
-        // 2. Подсчет суммы, поиск min и max через while
         int sumWhile = 0;
         int min = arr[0];
         int max = arr[0];
@@ -37,7 +35,6 @@ public class ShowArgs {
             j++;
         }
 
-        // Вывод результатов
         System.out.println("Сумма (do-while): " + sumDoWhile);
         System.out.println("Сумма (while): " + sumWhile);
         System.out.println("Минимум: " + min);
