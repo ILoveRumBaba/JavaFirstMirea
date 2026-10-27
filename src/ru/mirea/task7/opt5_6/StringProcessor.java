@@ -31,7 +31,6 @@ class MainString {
     public static void main(String[] args) {
         StringProcessor processor = new ProcessStrings();
         String test = "ABCDEFG";
-
         System.out.println("Исходная строка: " + test);
         System.out.println("1) Количество символов: " + processor.countCharacters(test));
         System.out.println("2) Символы на нечетных позициях (1, 3, 5, 7): " + processor.getOddPositionChars(test));

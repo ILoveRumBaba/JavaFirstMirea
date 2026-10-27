@@ -4,16 +4,13 @@ import java.util.Scanner;
 public class ShowArgs {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
         System.out.print("Введите размер массива: ");
         int n = sc.nextInt();
         int[] arr = new int[n];
-
         System.out.println("Введите элементы массива:");
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-
         int sumDoWhile = 0;
         int i = 0;
         if (n > 0) {
@@ -22,7 +19,6 @@ public class ShowArgs {
                 i++;
             } while (i < n);
         }
-
         int sumWhile = 0;
         int min = arr[0];
         int max = arr[0];
@@ -34,7 +30,6 @@ public class ShowArgs {
             if (arr[j] > max) max = arr[j];
             j++;
         }
-
         System.out.println("Сумма (do-while): " + sumDoWhile);
         System.out.println("Сумма (while): " + sumWhile);
         System.out.println("Минимум: " + min);
