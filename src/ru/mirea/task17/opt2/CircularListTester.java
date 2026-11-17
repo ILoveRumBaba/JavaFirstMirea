@@ -67,9 +67,8 @@ class CircularLinkedList {
                 if (prev != null) {
                     prev.next = current.next;
                 } else {
-                    // Удаляется головной элемент (head)
                     if (head.next == head) {
-                        head = null; // В списке был всего один элемент
+                        head = null;
                     } else {
                         CircularStudentNode last = head;
                         while (last.next != head) {
